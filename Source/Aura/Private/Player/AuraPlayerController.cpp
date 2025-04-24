@@ -52,7 +52,7 @@ void AAuraPlayerController::CursorTrace()
 void AAuraPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
-	check(AuraContext);
+	check(AuraContext); //若check()里的语句返回false或为空指针，立即结束程序
 
 	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem< UEnhancedInputLocalPlayerSubsystem>(GetLocalPlayer());
 	check(Subsystem);
