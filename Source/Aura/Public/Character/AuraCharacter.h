@@ -24,8 +24,7 @@ protected:
 
 
 private:
-	UPROPERTY(ReplicatedUsing = OnRep_PlayerState)
-	TObjectPtr<AAuraPlayerState> PlayerState;
+	void InitAbilityActorInfor();
 
 	
 };
