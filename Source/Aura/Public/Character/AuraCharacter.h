@@ -22,9 +22,7 @@ public:
 
 protected:
 
-
-private:
-	void InitAbilityActorInfor();
+	virtual void InitAbilityActorInfo() override;
 
 	
 };
